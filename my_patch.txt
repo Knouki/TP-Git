@@ -1,0 +1,109 @@
+From b7006d6c2f6357f4bdcbfd20b16670bbdb22ed51 Mon Sep 17 00:00:00 2001
+From: Sandra Bristiel <sandra.bristiel@tactfactory.com>
+Date: Mon, 16 Nov 2015 11:59:38 +0100
+Subject: [PATCH 1/4] Update major version
+
+---
+ test/test_app.bat | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/test/test_app.bat b/test/test_app.bat
+index e69de29..75df16a 100644
+--- a/test/test_app.bat
++++ b/test/test_app.bat
+@@ -0,0 +1,7 @@
++### application.bat - 2015 - Sandra Bristiel ###
++version = "2.0.0"
++build_hour = "11H30"
++
++echo "Copyright Company - 2015"
++echo "Build ${build_hour}"
++echo "version ${version}"
+\ No newline at end of file
+-- 
+2.6.2.windows.1
+
+
+From e261f6d387a8aa803d8f0f13cd978bf2c460ee88 Mon Sep 17 00:00:00 2001
+From: Sandra Bristiel <sandra.bristiel@tactfactory.com>
+Date: Mon, 16 Nov 2015 12:05:19 +0100
+Subject: [PATCH 2/4] Update minor alternative version
+
+---
+ test/test_app.bat | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+diff --git a/test/test_app.bat b/test/test_app.bat
+index 983623d..07113b5 100644
+--- a/test/test_app.bat
++++ b/test/test_app.bat
+@@ -1 +1,7 @@
+-### application.bat - 2015 - Sandra Bristiel ###
+\ No newline at end of file
++### application.bat - 2015 - Sandra Bristiel ###
++version = "1.2.0-b"
++build_hour = "11H30"
++
++echo "Copyright Company - 2015"
++echo "Build ${build_hour}"
++echo "version ${version}"
+\ No newline at end of file
+-- 
+2.6.2.windows.1
+
+
+From 743535f892d280e33fab369586dc44f94d7a7f94 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Charles=20Gu=C3=A9rin-Rouard?=
+ <charles.guerin.rouard@gmail.com>
+Date: Mon, 16 Nov 2015 14:40:38 +0100
+Subject: [PATCH 3/4] update header for new member
+
+---
+ src/application.bat | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/application.bat b/src/application.bat
+index f0ba54e..a254c1e 100644
+--- a/src/application.bat
++++ b/src/application.bat
+@@ -1,4 +1,4 @@
+-### application.bat - 2015 - Sandra Bristiel ###
++### application.bat - 2015 - Sandra Bristiel, Charles Guérin-Rouard ###
+ version = "2"
+ build_hour = "11H30"
+ 
+-- 
+2.6.2.windows.1
+
+
+From b0cdf01bd20f787af713abeddccf8513cc9a3385 Mon Sep 17 00:00:00 2001
+From: Sandra Bristiel <sandra.bristiel@tactfactory.com>
+Date: Mon, 16 Nov 2015 15:52:13 +0100
+Subject: [PATCH 4/4] Add Submodule
+
+---
+ .gitmodules | 3 +++
+ Shifu       | 1 +
+ 2 files changed, 4 insertions(+)
+ create mode 100644 .gitmodules
+ create mode 160000 Shifu
+
+diff --git a/.gitmodules b/.gitmodules
+new file mode 100644
+index 0000000..84e52df
+--- /dev/null
++++ b/.gitmodules
+@@ -0,0 +1,3 @@
++[submodule "Shifu"]
++	path = Shifu
++	url = git@github.com:Knouki/Shifumi.git
+diff --git a/Shifu b/Shifu
+new file mode 160000
+index 0000000..be99ad6
+--- /dev/null
++++ b/Shifu
+@@ -0,0 +1 @@
++Subproject commit be99ad6e8e42fac660311d3542bd17b0b8eb37be
+-- 
+2.6.2.windows.1
+
